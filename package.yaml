@@ -1,0 +1,52 @@
+name:                BlogHaskell
+version:             0.1.0.0
+github:              "FabianVegaA/BlogHaskell"
+license:             BSD3
+author:              "Fabián Vega Alcota"
+maintainer:          "example@example.com"
+copyright:           "2022 Fabián Vega Alcota"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            A blog written in Haskell
+category:            Web
+
+description:         Please see the README on GitHub at <https://github.com/FabianVegaA/BlogHaskell#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- scotty == 0.12
+- blaze-html == 0.9.1.2
+- text == 1.2.4.1
+- wai-middleware-static == 0.9.2
+- postgresql-simple == 0.6.4
+- load-env == 0.2.1.0
+- transformers == 0.5.6.2
+- time == 1.9.3
+
+library:
+  source-dirs: src
+
+executables:
+  BlogHaskell-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - BlogHaskell
+
+tests:
+  BlogHaskell-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - BlogHaskell
