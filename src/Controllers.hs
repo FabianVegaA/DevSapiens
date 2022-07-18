@@ -2,7 +2,7 @@ module Controllers where
 
 import Database.PostgreSQL.Simple (Connection)
 import Text.Blaze.Html.Renderer.Text (renderHtml)
-import Views
+import Views.Index
 import Web.Scotty (ActionM, html)
 
 indexController :: Connection -> ActionM ()

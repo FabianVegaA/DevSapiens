@@ -31,7 +31,7 @@ library
       Database
       Lib
       Routes
-      Views
+      Views.Index
   other-modules:
       Paths_BlogHaskell
   hs-source-dirs:

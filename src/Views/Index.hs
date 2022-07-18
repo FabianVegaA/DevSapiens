@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Views where
+module Views.Index where
 
 import Control.Monad.IO.Class (liftIO)
 import Data.Maybe (fromJust)
@@ -33,6 +33,10 @@ indexView conn = do
           h1 "Welcome to the blog  Dev Sapiens"
           p "The blog for the new developers of the future."
           postsHtml
+        footer $ do
+          button ! class_ "new_post" $ do
+            a ! href "/new" $ do
+              img ! src "img/new.png"
 
 getPosts :: Connection -> ActionM Html
 getPosts conn = do
