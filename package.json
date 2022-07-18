@@ -1,0 +1,26 @@
+{
+  "name": "devsapiens",
+  "version": "1.0.0",
+  "description": "A web application for blogs.",
+  "main": "static/scripts/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "run": "stack run",
+    "test": "stack test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianVegaA/DevSapiens.git"
+  },
+  "author": "Fabián Vega Alcota",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/FabianVegaA/DevSapiens/issues"
+  },
+  "homepage": "https://github.com/FabianVegaA/DevSapiens#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

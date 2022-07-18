@@ -2,3 +2,4 @@
 *~
 db/postgres/
 .vscode/
+node_modules/
