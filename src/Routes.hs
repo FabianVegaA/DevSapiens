@@ -7,7 +7,6 @@ import Controllers
 import Database.PostgreSQL.Simple (Connection)
 import Lib (Config (..), ConfigR)
 import Text.Blaze.Html.Renderer.Text (renderHtml)
-import Views
 import Web.Scotty (ActionM, ScottyM, get, html, middleware)
 
 routes :: ConfigR (ScottyM ())
